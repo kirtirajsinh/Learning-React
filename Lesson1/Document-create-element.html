@@ -5,19 +5,32 @@
     <script src="https://unpkg.com/@babel/standalone@7.12.12/babel.min.js"></script>
     <script type="text/babel">
         const rootElement = document.getElementById("root");
+        const element = (
+            <>
+            <span>Hello</span> <span>World</span>
+            </>
+        )
+        ReactDOM.render(element,rootElement);
+
+
+
+
+
         // const element = React.createElement('div',{
         //     children:React.createElement('span',null,"Hello"," World"),
         //     className:"container"
         // });
-        const children = "Hello World";
-         const className = "container";
-         const props = {children,className}
+        // const children = "Hello World";
+        //  const className = "container";
+        //  const props = {children,className}
             
-        const element = <div id="app-root" {...props} className="not-container" />
+        // const element = <div id="app-root" {...props} className="not-container" />
             
             
-        console.log(element);
-        ReactDOM.render(element,rootElement);
+        // console.log(element);
+
+        
+       
         // const element = document.createElement("div");
         // element.className = "container";
         // element.textContent = "Hello World";
